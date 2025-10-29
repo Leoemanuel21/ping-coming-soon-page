@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Blue-500: rgb(79, 125, 243);
+    --Blue-200: rgb(194, 211, 255);
+    --Red-400: rgb(255, 82, 99);
+    --Gray-400: rgb(150, 150, 150);
+    --Blue-950: rgb(21, 31, 41);
+
+    --font-destaque: 'Libre Franklin', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: var(--font-destaque);
+    text-align: center;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 30rem;
+}
+
+.header{
+    margin: 10rem 0 2rem 0;
+}
+
+.header h1{
+    margin: 4rem 0 2rem 0;
+    color: var(--Gray-400);
+    font-weight: 300;
+}
+
+.header h1 strong{
+    color: var(--Blue-950);
+    font-weight: 700;
+}
+
+.header h2{
+    color: var(--Blue-950);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.form{
+    margin-bottom: 5rem;
+}
+
+.email-box{
+    width: 27rem;
+    height: 4rem;
+    border: .1rem solid var(--Blue-200);
+    border-radius: 5rem;
+    outline: none;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.email-box::placeholder{
+    color: var(--Blue-200);
+}
+
+.error-email-box::placeholder{
+    color: black;
+}
+
+.msg-error{
+    margin: -.5rem 0 2rem 0;
+    color: var(--Red-400);
+    font-size: 1.2rem;
+    font-style: italic;
+    display: none;
+}
+
+.button{
+    width: 27rem;
+    height: 4rem;
+    background-color: var(--Blue-500);
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem var(--Blue-200);
+    font-size: 1.4rem;
+}
+
+.illustration{
+    margin-bottom: 5rem;
+}
+
+.illustration img{
+    width: 100%;
+}
+
+.social-media-conteiner p{
+    margin: 2rem;
+    color: var(--Gray-400);
+    font-size: 1.2rem;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media i{
+    width: 4rem;
+    height: 4rem;
+    border: .1rem solid var(--Blue-200);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    margin: 1rem;
+}
+
+footer p{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+footer a{
+    color: var(--Blue-500);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
