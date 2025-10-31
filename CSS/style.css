@@ -99,6 +99,7 @@ main{
     border-radius: 5rem;
     box-shadow: 0 .5rem 1rem var(--Blue-200);
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .illustration{
@@ -123,6 +124,7 @@ main{
 }
 
 .social-media i{
+    color: var(--Blue-500);
     width: 4rem;
     height: 4rem;
     border: .1rem solid var(--Blue-200);
@@ -131,7 +133,14 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
+.social-media i:hover{
+    background-color: var(--Blue-500);
+    color: white;
+}
+
 
 footer{
     margin: 1rem;
